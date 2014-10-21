@@ -45,3 +45,24 @@ put_bar
 
 #put_line and put_bar are methods not yet defined which will print a line or a put_bar
 #For the last part of the initialize method we will let whoever is X make their first move
+
+if(@user == 'X')
+	user_turn
+else
+	computer_turn
+end
+
+#the user/computer_turn methods are what will be called to allow either or to make a move. These will be defined properly later and for now we will define just have the put_line or put_bar methods.
+def put_line
+	puts "-------------------------------------------------------------------------------------------------------------"
+end
+def put_bar
+	puts "#############################################################################################################"
+	puts "#############################################################################################################"
+end
+
+
+
+
+
+
