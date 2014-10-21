@@ -29,3 +29,19 @@
 
 @computer = rand() > 0.5 ? 'X' : 'O'
 @user = @computer == 'X' ? 'O' : 'X'
+
+#each player now needs a name
+#We will name the computer as Mr Computer 
+#Then we will ask the user to input their name 
+#Then each will be stored in the variables @computer_name and @user_name
+
+@computer_name = "Mr Computer"
+put_line
+puts " MR Computer TIC TAC TOE"
+puts " What is your name?"
+STDOUT.flush
+@user_name = gets.chomp
+put_bar
+
+#put_line and put_bar are methods not yet defined which will print a line or a put_bar
+#For the last part of the initialize method we will let whoever is X make their first move
