@@ -61,8 +61,23 @@ def put_bar
 	puts "#############################################################################################################"
 end
 
+#now we have enough information for the method that draws our ttt board
+#print out the user name
+#print out who is X and who is O which will make it easier for the player
 
-
+def draw_game
+	puts ""
+	puts "#{@computer_name}: #{@computer}"
+	puts "#{@user_name}: #{@user}"
+	puts ""
+	puts "   a b c"
+	puts ""
+	puts " 1 #{@places["a1"]}|#{@places["b1"]}|#{@places["c1"]}"
+	puts "   -------"
+	puts " 2 #{@places["a2"]}|#{@places["b2"]}|#{@places["c2"]}"
+	puts "   -------"
+	puts " 3 #{@places["a3"]}|#{@places["b2"]}|#{@places["c3"]}"
+end
 
 
 
