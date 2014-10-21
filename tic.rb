@@ -79,5 +79,21 @@ def draw_game
 	puts " 3 #{@places["a3"]}|#{@places["b2"]}|#{@places["c3"]}"
 end
 
+#The @places hash defaults to having a space for each slot
+#when a player makes a move it will then contain Xor O
+#it automatically draws it to the board the next time we render it
+
+def computer_turn
+	move = computer_find_move
+	@places[move] = @computer
+	put_line
+	puts "#{@computer_name} marks #{move.upcase}"
+	check_game(@user)
+end
+#Above is the computer turn method
+#we call the function computer_find_move which will be defined later. 
+#this analyses the positions available to determine the best move
+#
+
 
 
