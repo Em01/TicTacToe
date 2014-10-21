@@ -23,3 +23,9 @@
   ['a1','b2','c3'],
   ['c1','b2','a3']
 ]
+
+#next we must define who is X and who is O
+#then these must be assigned to a variable @computer and @user
+
+@computer = rand() > 0.5 ? 'X' : 'O'
+@user = @computer == 'X' ? 'O' : 'X'
